@@ -1,0 +1,95 @@
+.PromptTextarea{
+outline: 0;
+background: rgba(221, 221, 221, 0.1);
+border: 1px solid #000000;
+backdrop-filter: blur(12px); 
+border-radius: 20px;
+color: #ffffff;
+padding: 10px;
+}
+/* Dropdown */
+
+.dropdown {
+display: inline-block;
+position: relative;
+}
+
+.ddButton {
+display: inline-block;
+border-radius: 20px;
+padding: 10px 60px 10px 20px;
+background: rgba(221, 221, 221, 0.1);
+white-space: nowrap;
+color: white;
+}
+
+.ddButton:after {
+content: '';
+position: absolute;
+top: 50%;
+right: 15px;
+transform: translateY(-50%);
+width: 0; 
+height: 0; 
+border-left: 5px solid transparent;
+border-right: 5px solid transparent;
+border-top: 5px solid white;
+}
+.ddInput {
+display: none;
+}
+.ddMenu {
+position: absolute;
+top: 100%;
+width: 100%;
+border-radius: 4px;
+color: white;
+padding: 0;
+margin: 2px 0 0 0;
+box-shadow: 0 0 6px 0 rgba(0,0,0,0.1);
+background: rgba(221, 221, 221, 0.1);
+list-style-type: none;
+}
+.ddInput + .ddMenu {
+display: none;
+} 
+.ddInput:checked + .ddMenu {
+display: block;
+} 
+.ddMenu li {
+padding: 10px 20px;
+cursor: pointer;
+white-space: nowrap;
+}
+.ddMenu li a {
+	display: block;
+	margin: -10px -20px;
+	padding: 10px 20px;
+}
+.GenerateButton{
+	background: radial-gradient(107.14% 107.14% at 50% 80.95%, #FFE431 0%, #FFE11A 100%);
+	box-shadow: 0px 8px 32px rgba(254, 233, 45, 0.32), inset 0px -4px 8px rgba(119, 103, 0, 0.6), inset 0px -8px 16px #FFBE16;
+	border-radius: 40px;
+	display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+}
+.YourGeneration{
+	background: rgba(111, 26, 255, 0.1);
+	backdrop-filter: blur(8px);
+	width: 100%;
+	border-radius: 64px 64px 0px 0px;
+}
+.AddToChain{
+	background: black;
+	border: none;
+	border-radius: 20px;
+	padding: 10px 30px;
+	border: 1.024px solid rgba(255, 255, 255, 0.16);
+	color: #FFE11A;
+}
+.YourGenWrapper{
+	border: 2px dashed rgba(111, 26, 255, 0.5);
+  backdrop-filter: blur(49.152px);
+}
